@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body{
+    margin: 0 20px
+}
+svg{
+    margin: 25px 50px;
+    width: 158px;
+    height: 33px;
+}
+section{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px
+}
+.heroImage{
+    margin: 0 auto;
+    width: 90vw;
+    height: 40vh;
+    background-image: url("./images/hero-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.intro{
+    margin: 50px auto
+}
+#we{
+    color: rgb(21, 158, 78)
+}
+h1{
+    color:black;
+    text-align: center;
+    font-size: 4rem
+}
+p{
+    text-align: center;
+    color: rgb(172, 6, 34);
+    font-size: 1.15rem
+}
+
+input{
+    border-radius: 3px
+}
+form{
+    position: relative;
+    width: 95%;
+    height: 50px;
+    margin-bottom: 200px
+}
+#email{
+    width: 95%;
+    border: 2px solid rgb(133, 179, 27);
+    padding: 20px;
+    color: rgb(41, 19, 241);
+    position: absolute;
+    left: 0
+}
+#submit{
+    position: absolute;
+    right: 0;
+    font-size: 30px;
+    width: 125px;
+    color: rgb(44, 168, 96);
+    background-color: rgb(99, 23, 36);
+    border: 2px solid rgb(45, 209, 67);
+    padding: 10px;
+}
+
+@media screen and (min-width: 768px){
+    .heroImage{
+        margin: 0 auto;
+        width: 90vw;
+        height: 35vh;
+        background-image: url("./images/hero-mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat    
+    }
+    svg{
+        width: 300px;
+        height: 66px;
+        margin: 25px 50px;
+        margin-bottom: -20px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .heroImage{
+        width: 95vw;
+        height: 30vh
+    }
+    svg{
+        width: 400px;
+        height: 99px;
+        margin: 25px 50px;
+        margin-bottom: -60px 
+    }
+}
